@@ -1,2 +1,104 @@
-body
-  color: red
+$scout-purple: #7413dc
+$scout-green: #00a794
+
+$section-gaps: 2.4%
+$internal-gaps: 5%
+
+$map-size: 80%
+
+$section-height: 550px
+
+html
+  height: 100%
+  body
+    margin: 0px
+    height: 100%
+  
+    #header
+      min-height: 30%
+      background:
+        color: $scout-purple
+
+    .section
+      height: $section-height
+      display: inline-block
+      width: 100%
+
+      .flex 
+        padding: $section-gaps 0%
+        display: flex
+        height: 100 - (2*$section-gaps)
+        
+        .text-section
+          height: 100%
+          flex:1
+        
+        .image-section
+          height: 100%
+          flex:1
+  
+    #what
+
+      .flex
+
+        .text-section
+          background:
+            color: $scout-green 
+        
+        .image-section
+          .image-container
+            height: 100%
+            width: 50%
+            margin-left: $internal-gaps
+            background:
+              image: url("../img/climb.jpg")
+              size: cover
+              repeat: no-repeat
+    
+    #where
+
+      .flex
+
+        .text-section
+          background:
+            color: $scout-purple 
+        
+        .image-section
+
+          #map
+            height: 100%
+            width: 60%
+            margin-left: 41%
+            position: relative
+            background:
+              color: $scout-purple
+            
+            #map-container
+              position: absolute
+              top: (100-$map-size)/2
+              left: (100-$map-size)/2
+              height: $map-size
+              width: $map-size + $internal-gaps
+              background:
+                color: white
+
+    #get
+
+      .flex
+
+        .text-section
+        
+        .image-section
+          .image-container
+            height: 100%
+            width: 70%
+            margin-left: $internal-gaps
+            background:
+              image: url("../img/jump.jpg")
+              size: cover
+              repeat: no-repeat
+  
+  #footer
+    height: 100px
+    background: 
+      color: black
