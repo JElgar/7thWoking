@@ -3,21 +3,70 @@ $scout-green: #00a794
 
 $section-gaps: 2.4%
 $internal-gaps: 5%
+$side-gaps: 15%
 
 $map-size: 80%
 
 $section-height: 550px
 
+
 html
   height: 100%
   body
+    color: white
+    font: 
+      family: 'Nunito Sans', sans-serif
+      weight: 200
     margin: 0px
     height: 100%
   
     #header
-      min-height: 30%
+      height: 300px
       background:
         color: $scout-purple
+
+      #header-container
+        height: 100%
+        width: 100-($side-gaps *2)
+        margin-left: $side-gaps
+
+        div
+          height: 100%
+          display: flex
+
+          #header-logo 
+            flex: 1
+
+            img
+              width: 284.5px
+              height: 90%
+              margin-top: 15px
+          
+          #header-links
+            flex: 1
+
+            ul
+              padding-top: 38px
+              list-style-type: none
+              font: 
+                size: 28px
+            
+            ul > li
+              margin-top: 26px
+         
+            ul:first-child
+              margin-top: 0px
+              
+          
+          #header-text
+            flex: 2
+            display: inline-block
+            padding: 5%
+
+            p
+              width: 100%
+              font:
+                size: 16px
 
     .section
       height: $section-height
@@ -48,7 +97,7 @@ html
         .image-section
           .image-container
             height: 100%
-            width: 50%
+            width: 100 - $side-gaps * 2 - $internal-gaps
             margin-left: $internal-gaps
             background:
               image: url("../img/climb.jpg")
@@ -67,8 +116,8 @@ html
 
           #map
             height: 100%
-            width: 60%
-            margin-left: 41%
+            width: 100 - $side-gaps * 2
+            margin-left: $side-gaps * 2 + 1%
             position: relative
             background:
               color: $scout-purple

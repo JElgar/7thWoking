@@ -2,9 +2,6 @@ html {
   height: 100%;
 }
 html body {
-  color: white;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 200;
   margin: 0px;
   height: 100%;
 }
@@ -14,43 +11,9 @@ html body #header {
 }
 html body #header #header-container {
   height: 100%;
-  width: 70%;
+  width: 60%;
   margin-left: 15%;
-}
-html body #header #header-container div {
-  height: 100%;
-  display: flex;
-}
-html body #header #header-container div #header-logo {
-  flex: 1;
-}
-html body #header #header-container div #header-logo img {
-  width: 284.5px;
-  height: 90%;
-  margin-top: 15px;
-}
-html body #header #header-container div #header-links {
-  flex: 1;
-}
-html body #header #header-container div #header-links ul {
-  padding-top: 38px;
-  list-style-type: none;
-  font-size: 28px;
-}
-html body #header #header-container div #header-links ul > li {
-  margin-top: 26px;
-}
-html body #header #header-container div #header-links ul:first-child {
-  margin-top: 0px;
-}
-html body #header #header-container div #header-text {
-  flex: 2;
-  display: inline-block;
-  padding: 5%;
-}
-html body #header #header-container div #header-text p {
-  width: 100%;
-  font-size: 16px;
+  background-color: red;
 }
 html body .section {
   height: 550px;
@@ -75,7 +38,7 @@ html body #what .flex .text-section {
 }
 html body #what .flex .image-section .image-container {
   height: 100%;
-  width: 65%;
+  width: 50%;
   margin-left: 5%;
   background-image: url("../img/climb.jpg");
   background-size: cover;
@@ -86,8 +49,8 @@ html body #where .flex .text-section {
 }
 html body #where .flex .image-section #map {
   height: 100%;
-  width: 70%;
-  margin-left: 31%;
+  width: 60%;
+  margin-left: 41%;
   position: relative;
   background-color: #7413dc;
 }
@@ -112,4 +75,4 @@ html #footer {
   background-color: black;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css%23.map */
