@@ -8,6 +8,15 @@ html body {
   margin: 0px;
   height: 100%;
 }
+html body button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+}
 html body #header {
   height: 300px;
   background-color: #7413dc;
@@ -37,6 +46,10 @@ html body #header #header-container div #header-links ul {
   list-style-type: none;
   font-size: 28px;
 }
+html body #header #header-container div #header-links ul a {
+  color: white;
+  text-decoration: none;
+}
 html body #header #header-container div #header-links ul > li {
   margin-top: 26px;
 }
@@ -50,7 +63,7 @@ html body #header #header-container div #header-text {
 }
 html body #header #header-container div #header-text p {
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
 }
 html body .section {
   height: 550px;
@@ -73,6 +86,40 @@ html body .section .flex .image-section {
 html body #what .flex .text-section {
   background-color: #00a794;
 }
+html body #what .flex .text-section .text-container {
+  width: 68%;
+  margin-left: 30%;
+  align-content: right;
+}
+html body #what .flex .text-section .text-container h1 {
+  text-align: right;
+}
+html body #what .flex .text-section .text-container p {
+  font-size: 18px;
+}
+html body #what .flex .text-section .text-container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3vw);
+  margin-top: 10%;
+}
+html body #what .flex .text-section .text-container .grid-container .image-container {
+  justify-self: end;
+}
+html body #what .flex .text-section .text-container .grid-container .image-container img {
+  height: 90%;
+  width: auto;
+}
+html body #what .flex .text-section .text-container .grid-container .age {
+  justify-self: center;
+  align-self: center;
+  font-weight: 900;
+  font-size: 25px;
+}
+html body #what .flex .text-section .text-container .grid-container .date {
+  align-self: center;
+  font-size: 20px;
+}
 html body #what .flex .image-section .image-container {
   height: 100%;
   width: 65%;
@@ -83,6 +130,33 @@ html body #what .flex .image-section .image-container {
 }
 html body #where .flex .text-section {
   background-color: #7413dc;
+}
+html body #where .flex .text-section .text-container {
+  margin-left: 5%;
+  width: 70%;
+}
+html body #where .flex .text-section .text-container ul {
+  padding: 0px;
+  padding-left: 5%;
+  margin: 0px;
+  list-style-type: none;
+  float: right;
+  font-weight: 400;
+  font-size: 20px;
+}
+html body #where .flex .text-section .text-container .button-container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+html body #where .flex .text-section .text-container .button-container button {
+  background-color: white;
+  color: #7413dc;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  left: 30%;
+  top: 40%;
 }
 html body #where .flex .image-section #map {
   height: 100%;
@@ -99,8 +173,40 @@ html body #where .flex .image-section #map #map-container {
   width: 85%;
   background-color: white;
 }
-html body #get .flex .image-section .image-container {
+html body #where .flex .image-section #map #map-container iframe {
+  width: 100%;
   height: 100%;
+  border: 0;
+}
+html body #get .flex .text-section .text-container {
+  width: 68%;
+  margin-left: 30%;
+  align-content: right;
+}
+html body #get .flex .text-section .text-container h1 {
+  text-align: right;
+  color: #00a794;
+}
+html body #get .flex .text-section .text-container p {
+  color: black;
+  font-size: 18px;
+}
+html body #get .flex .text-section .text-container .button-container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  padding-top: 5%;
+}
+html body #get .flex .text-section .text-container .button-container button {
+  background-color: #00a794;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  left: 30%;
+}
+html body #get .flex .image-section .image-container {
+  height: 90%;
   width: 70%;
   margin-left: 5%;
   background-image: url("../img/jump.jpg");
@@ -110,6 +216,18 @@ html body #get .flex .image-section .image-container {
 html #footer {
   height: 100px;
   background-color: black;
+}
+html #footer img {
+  height: 80%;
+  margin-left: 15%;
+  float: left;
+}
+html #footer p {
+  float: left;
+  margin-left: 2%;
+  margin-top: 40px;
+  font-weight: 200;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

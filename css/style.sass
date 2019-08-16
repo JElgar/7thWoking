@@ -9,6 +9,8 @@ $map-size: 80%
 
 $section-height: 550px
 
+$content-font-size: 18px
+
 
 html
   height: 100%
@@ -19,6 +21,16 @@ html
       weight: 200
     margin: 0px
     height: 100%
+
+    button
+      border: none
+      padding: 15px 32px
+      text-align: center
+      text-decoration: none
+      display: inline-block
+      font:
+        size: 20px
+        weight: 600
   
     #header
       height: 300px
@@ -50,12 +62,17 @@ html
               list-style-type: none
               font: 
                 size: 28px
+              
+              a
+                color: white
+                text-decoration: none
             
             ul > li
               margin-top: 26px
          
             ul:first-child
               margin-top: 0px
+
               
           
           #header-text
@@ -66,7 +83,7 @@ html
             p
               width: 100%
               font:
-                size: 16px
+                size: $content-font-size
 
     .section
       height: $section-height
@@ -93,6 +110,44 @@ html
         .text-section
           background:
             color: $scout-green 
+
+          .text-container
+            width: 100 - $side-gaps *2 - 2
+            margin-left: $side-gaps * 2
+            align-content: right
+
+            h1
+              text-align: right
+
+            p
+              font:
+                size: $content-font-size
+
+            .grid-container 
+              display: grid
+              grid-template-columns: repeat(3, 1fr)
+              grid-template-rows: repeat(3, 3vw)
+              margin-top: 10%
+
+              .image-container
+                justify-self: end
+                
+                img
+                  height: 90%
+                  width: auto
+
+              .age
+                justify-self: center
+                align-self: center
+                font:
+                  weight: 900
+                  size: 25px
+              
+              .date
+                align-self: center
+                font:
+                  size: 20px
+
         
         .image-section
           .image-container
@@ -111,6 +166,38 @@ html
         .text-section
           background:
             color: $scout-purple 
+
+          .text-container
+            margin-left: $internal-gaps
+            width: 100 - $side-gaps * 2
+
+            ul
+              padding: 0px
+              padding:
+                left: $internal-gaps
+              margin: 0px
+              list-style-type: none
+              float: right
+              font:
+                weight: 400
+                size: 20px
+
+            .button-container
+              width: 100%
+              height: 50px
+              position: relative
+
+              button
+                background:
+                  color: white
+                color: $scout-purple
+                font:
+                  size: 20px
+                  weight: 600
+                position: absolute 
+                left: 30%
+                top: 40%
+
         
         .image-section
 
@@ -131,23 +218,71 @@ html
               background:
                 color: white
 
+              iframe
+                width: 100%
+                height: 100%
+                border: 0
+
     #get
 
       .flex
 
         .text-section
+
+          .text-container
+            width: 100 - $side-gaps *2 - 2
+            margin-left: $side-gaps * 2
+            align-content: right
+
+            h1
+              text-align: right
+              color: $scout-green
+
+            p
+              color: black
+              font:
+                size: $content-font-size
+
+            .button-container
+              width: 100%
+              height: 50px
+              position: relative
+              padding-top: 5%
+              
+              button
+                background:
+                  color: $scout-green
+                color: white
+                font:
+                  size: 20px
+                  weight: 600
+                position: absolute 
+                left: 30%
         
         .image-section
           .image-container
-            height: 100%
+            height: 90%
             width: 70%
             margin-left: $internal-gaps
             background:
               image: url("../img/jump.jpg")
               size: cover
               repeat: no-repeat
-  
+
   #footer
     height: 100px
     background: 
       color: black
+
+    img
+      height: 80%
+      margin-left: $side-gaps
+      float: left
+
+    p
+      float: left
+      margin-left: 2%
+      margin-top: 40px
+      font:
+        weight: 200
+        size: 15px
