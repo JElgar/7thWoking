@@ -63,6 +63,7 @@ html
             flex-direction: column
 
           #header-logo 
+            align-items: center
             flex: 1
 
             img
@@ -78,6 +79,9 @@ html
               list-style-type: none
               font: 
                 size: 28px
+              @media screen and (max-width: $breakpoint-content) 
+                margin-left: 0
+                padding-left: 0
               
               a
                 color: white
@@ -95,6 +99,8 @@ html
             flex: 2
             display: inline-block
             padding: 5%
+            @media screen and (max-width: $breakpoint-content) 
+              padding-left: 0
 
             p
               width: 100%
@@ -335,7 +341,7 @@ html
         .image-section
           .image-container
             height: 90%
-            width: 70%
+            width: 80%
             margin-left: $internal-gaps
             background:
               image: url("../img/jump.jpg")

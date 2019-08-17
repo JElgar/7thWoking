@@ -43,6 +43,7 @@ html body #header #header-container div {
   }
 }
 html body #header #header-container div #header-logo {
+  align-items: center;
   flex: 1;
 }
 html body #header #header-container div #header-logo img {
@@ -58,6 +59,12 @@ html body #header #header-container div #header-links ul {
   list-style-type: none;
   font-size: 28px;
 }
+@media screen and (max-width: 1000px) {
+  html body #header #header-container div #header-links ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
 html body #header #header-container div #header-links ul a {
   color: white;
   text-decoration: none;
@@ -72,6 +79,11 @@ html body #header #header-container div #header-text {
   flex: 2;
   display: inline-block;
   padding: 5%;
+}
+@media screen and (max-width: 1000px) {
+  html body #header #header-container div #header-text {
+    padding-left: 0;
+  }
 }
 html body #header #header-container div #header-text p {
   width: 100%;
@@ -322,7 +334,7 @@ html body #get .flex .text-section .text-container .button-container button {
 }
 html body #get .flex .image-section .image-container {
   height: 90%;
-  width: 70%;
+  width: 80%;
   margin-left: 5%;
   background-image: url("../img/jump.jpg");
   background-size: cover;
