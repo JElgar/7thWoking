@@ -160,13 +160,14 @@ html
                 size: $content-font-size
 
             .grid-container 
+              width: 80%
               display: grid
               grid-template-columns: repeat(3, 1fr)
-              grid-template-rows: repeat(3, 3vw)
+              grid-template-rows: repeat(3, 3fr)
               margin-top: 10%
               @media only screen and (max-width: $breakpoint-content)
-                margin-bottom: 10%
-                grid-template-columns: 1fr
+                margin: 10%
+                grid-template-columns: 100%
                 grid-template-rows: repeat(9, 50px)
                 grid-template-rows: $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text
 
@@ -226,7 +227,7 @@ html
             width: 100 - $side-gaps * 2
             @media screen and (max-width: $breakpoint-content) 
               width: $mobile-width
-              margin-left: (100 - $mobile-width)/2
+              margin-left: 10%
 
 
             ul

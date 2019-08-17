@@ -148,15 +148,16 @@ html body #what .flex .text-section .text-container p {
   font-size: 18px;
 }
 html body #what .flex .text-section .text-container .grid-container {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 3vw);
+  grid-template-rows: repeat(3, 3fr);
   margin-top: 10%;
 }
 @media only screen and (max-width: 1000px) {
   html body #what .flex .text-section .text-container .grid-container {
-    margin-bottom: 10%;
-    grid-template-columns: 1fr;
+    margin: 10%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(9, 50px);
     grid-template-rows: 50px 30px 30px 50px 30px 30px 50px 30px 30px;
   }
