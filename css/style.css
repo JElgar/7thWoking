@@ -1,5 +1,8 @@
 html {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 html body {
   color: white;
@@ -130,7 +133,7 @@ html body #what .flex .text-section .text-container {
 @media only screen and (max-width: 1000px) {
   html body #what .flex .text-section .text-container {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
   }
 }
 html body #what .flex .text-section .text-container h1 {
@@ -155,7 +158,6 @@ html body #what .flex .text-section .text-container .grid-container .image-conta
 }
 html body #what .flex .text-section .text-container .grid-container .image-container img {
   height: 90%;
-  width: auto;
 }
 html body #what .flex .text-section .text-container .grid-container .age {
   justify-self: center;
