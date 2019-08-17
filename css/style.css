@@ -8,7 +8,7 @@ html body {
   font-size: 18px;
   margin: 0px;
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 html body button {
@@ -109,6 +109,7 @@ html body .section .flex .image-section {
 }
 html body .section .flex .image-section .image-container {
   min-height: inherit;
+  overflow: hidden;
 }
 @media screen and (max-width: 1000px) {
   html body .section .flex .image-section .image-container {
