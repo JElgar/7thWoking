@@ -12,8 +12,9 @@ $section-height: 550px
 $content-font-size: 18px
 
 $breakpoint-header: 1414px
-$breakpoint-content: 600px
+$breakpoint-content: 1000px
 
+$mobile-width: 80%
 
 html
   height: 100%
@@ -25,6 +26,8 @@ html
       size: 18px
     margin: 0px
     height: 100%
+    max-width: 100%
+    overflow-x: hidden
 
     button
       border: none
@@ -50,6 +53,8 @@ html
         div
           height: 100%
           display: flex
+          @media screen and (max-width: $breakpoint-content) 
+            flex-direction: column
 
           #header-logo 
             flex: 1
@@ -99,14 +104,28 @@ html
         padding-top: $section-gaps
         display: flex
         min-height: inherit
+        @media screen and (max-width: $breakpoint-content) 
+          flex-direction: column
         
         .text-section
           min-height: inherit
           flex:1
+          @media screen and (max-width: $breakpoint-content) 
+            text-align: center
         
         .image-section
           min-height: inherit
           flex:1
+          @media screen and (max-width: $breakpoint-content) 
+            width: 100%
+
+          .image-container
+            min-height: inherit
+            @media screen and (max-width: $breakpoint-content) 
+              width: 100%
+
+            .image-container
+              min-height: inherit
   
     #what
 
@@ -120,9 +139,14 @@ html
             width: 100 - $side-gaps *2 - 2
             margin-left: $side-gaps * 2
             align-content: right
+            @media only screen and (max-width: $breakpoint-content)
+              width: $mobile-width
+              margin-left: (100-$mobile-width)/2
 
             h1
               text-align: right
+              @media only screen and (max-width: $breakpoint-content)
+                text-align: center
 
             p
               font:
@@ -164,10 +188,16 @@ html
               image: url("../img/climb.jpg")
               size: cover
               repeat: no-repeat
+            @media only screen and (max-width: $breakpoint-content)
+              margin-top: $internal-gaps
+              width: 100%
+              margin-right: $internal-gaps
     
     #where
 
       .flex
+        @media screen and (max-width: $breakpoint-content) 
+          flex-direction: column-reverse
 
         .text-section
           background:
@@ -176,6 +206,10 @@ html
           .text-container
             margin-left: $internal-gaps
             width: 100 - $side-gaps * 2
+            @media screen and (max-width: $breakpoint-content) 
+              width: $mobile-width
+              margin-left: (100 - $mobile-width)/2
+
 
             ul
               padding: 0px
@@ -187,6 +221,9 @@ html
               font:
                 weight: 400
                 size: 20px
+              @media screen and (max-width: $breakpoint-content) 
+                float: inherit
+
 
             .button-container
               width: 100%
@@ -199,9 +236,12 @@ html
                   size: 20px
                   weight: 600
                 margin-left: 30%
+                @media screen and (max-width: $breakpoint-content) 
+                  margin-left: $internal-gaps
 
         
         .image-section
+          
 
           #map
             height: 100%
@@ -210,6 +250,12 @@ html
             position: relative
             background:
               color: $scout-purple
+            @media screen and (max-width: $breakpoint-content) 
+              min-height: inherit
+              height: initial
+              margin-left: initial
+              width: 100%
+              margin-top: -5px
             
             #map-container
               position: absolute
@@ -236,9 +282,15 @@ html
             margin-left: $side-gaps * 2
             align-content: right
 
+            @media only screen and (max-width: $breakpoint-content)
+              width: 80%
+              margin-left: 10%
+
             h1
               text-align: right
               color: $scout-green
+              @media only screen and (max-width: $breakpoint-content)
+                text-align: center
 
             p
               color: black
@@ -256,6 +308,10 @@ html
                   size: 20px
                   weight: 600
                 margin-left: 30%
+                @media only screen and (max-width: $breakpoint-content)
+                  margin-left: 10%
+
+
         
         .image-section
           .image-container

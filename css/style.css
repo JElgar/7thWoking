@@ -8,6 +8,8 @@ html body {
   font-size: 18px;
   margin: 0px;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 html body button {
   border: none;
@@ -31,6 +33,11 @@ html body #header #header-container {
 html body #header #header-container div {
   height: 100%;
   display: flex;
+}
+@media screen and (max-width: 1000px) {
+  html body #header #header-container div {
+    flex-direction: column;
+  }
 }
 html body #header #header-container div #header-logo {
   flex: 1;
@@ -77,13 +84,39 @@ html body .section .flex {
   display: flex;
   min-height: inherit;
 }
+@media screen and (max-width: 1000px) {
+  html body .section .flex {
+    flex-direction: column;
+  }
+}
 html body .section .flex .text-section {
   min-height: inherit;
   flex: 1;
 }
+@media screen and (max-width: 1000px) {
+  html body .section .flex .text-section {
+    text-align: center;
+  }
+}
 html body .section .flex .image-section {
   min-height: inherit;
   flex: 1;
+}
+@media screen and (max-width: 1000px) {
+  html body .section .flex .image-section {
+    width: 100%;
+  }
+}
+html body .section .flex .image-section .image-container {
+  min-height: inherit;
+}
+@media screen and (max-width: 1000px) {
+  html body .section .flex .image-section .image-container {
+    width: 100%;
+  }
+}
+html body .section .flex .image-section .image-container .image-container {
+  min-height: inherit;
 }
 html body #what .flex .text-section {
   background-color: #00a794;
@@ -93,8 +126,19 @@ html body #what .flex .text-section .text-container {
   margin-left: 30%;
   align-content: right;
 }
+@media only screen and (max-width: 1000px) {
+  html body #what .flex .text-section .text-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 html body #what .flex .text-section .text-container h1 {
   text-align: right;
+}
+@media only screen and (max-width: 1000px) {
+  html body #what .flex .text-section .text-container h1 {
+    text-align: center;
+  }
 }
 html body #what .flex .text-section .text-container p {
   font-size: 18px;
@@ -131,12 +175,30 @@ html body #what .flex .image-section .image-container {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 1000px) {
+  html body #what .flex .image-section .image-container {
+    margin-top: 5%;
+    width: 100%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html body #where .flex {
+    flex-direction: column-reverse;
+  }
+}
 html body #where .flex .text-section {
   background-color: #7413dc;
 }
 html body #where .flex .text-section .text-container {
   margin-left: 5%;
   width: 70%;
+}
+@media screen and (max-width: 1000px) {
+  html body #where .flex .text-section .text-container {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 html body #where .flex .text-section .text-container ul {
   padding: 0px;
@@ -146,6 +208,11 @@ html body #where .flex .text-section .text-container ul {
   float: right;
   font-weight: 400;
   font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+  html body #where .flex .text-section .text-container ul {
+    float: inherit;
+  }
 }
 html body #where .flex .text-section .text-container .button-container {
   width: 100%;
@@ -157,12 +224,26 @@ html body #where .flex .text-section .text-container .button-container button {
   font-weight: 600;
   margin-left: 30%;
 }
+@media screen and (max-width: 1000px) {
+  html body #where .flex .text-section .text-container .button-container button {
+    margin-left: 5%;
+  }
+}
 html body #where .flex .image-section #map {
   height: 100%;
   width: 70%;
   margin-left: 31%;
   position: relative;
   background-color: #7413dc;
+}
+@media screen and (max-width: 1000px) {
+  html body #where .flex .image-section #map {
+    min-height: inherit;
+    height: initial;
+    margin-left: initial;
+    width: 100%;
+    margin-top: -5px;
+  }
 }
 html body #where .flex .image-section #map #map-container {
   position: absolute;
@@ -182,9 +263,20 @@ html body #get .flex .text-section .text-container {
   margin-left: 30%;
   align-content: right;
 }
+@media only screen and (max-width: 1000px) {
+  html body #get .flex .text-section .text-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 html body #get .flex .text-section .text-container h1 {
   text-align: right;
   color: #00a794;
+}
+@media only screen and (max-width: 1000px) {
+  html body #get .flex .text-section .text-container h1 {
+    text-align: center;
+  }
 }
 html body #get .flex .text-section .text-container p {
   color: black;
@@ -199,6 +291,11 @@ html body #get .flex .text-section .text-container .button-container button {
   font-size: 20px;
   font-weight: 600;
   margin-left: 30%;
+}
+@media only screen and (max-width: 1000px) {
+  html body #get .flex .text-section .text-container .button-container button {
+    margin-left: 10%;
+  }
 }
 html body #get .flex .image-section .image-container {
   height: 90%;
