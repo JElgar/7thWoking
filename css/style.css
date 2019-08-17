@@ -163,7 +163,7 @@ html body #what .flex .text-section .text-container .grid-container {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 3vw);
   margin-top: 10%;
 }
 @media only screen and (max-width: 1000px) {
