@@ -11,10 +11,13 @@ $section-height: 550px
 
 $content-font-size: 18px
 
-$breakpoint-header: 1414px
+$breakpoint-grid: 1200px
 $breakpoint-content: 1000px
 
 $mobile-width: 80%
+$mobile-grid-height-image: 50px
+$mobile-grid-height-text: 30px
+
 
 html
   height: 100%
@@ -145,7 +148,7 @@ html
             align-content: right
             @media only screen and (max-width: $breakpoint-content)
               width: $mobile-width
-              margin-left: 5%
+              margin-left: 10%
 
             h1
               text-align: right
@@ -161,9 +164,18 @@ html
               grid-template-columns: repeat(3, 1fr)
               grid-template-rows: repeat(3, 3vw)
               margin-top: 10%
+              @media only screen and (max-width: $breakpoint-content)
+                margin-bottom: 10%
+                grid-template-columns: 1fr
+                grid-template-rows: repeat(9, 50px)
+                grid-template-rows: $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text
+
+
 
               .image-container
                 justify-self: end
+                @media only screen and (max-width: $breakpoint-content)
+                  justify-self: center
                 
                 img
                   height: 90%
@@ -180,6 +192,9 @@ html
                 font:
                   size: 20px
                 line-height: 16pt
+                @media only screen and (max-width: $breakpoint-grid) and (min-width: $breakpoint-content)
+                  font-size: 16px
+                  line-height: 12pt
 
         
         .image-section
