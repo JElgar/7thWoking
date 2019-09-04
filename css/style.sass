@@ -18,6 +18,10 @@ $mobile-width: 80%
 $mobile-grid-height-image: 50px
 $mobile-grid-height-text: 30px
 
+$links-wrap-1: 1516px
+$links-wrap-2: 1284px
+$links-wrap-3: 1160px
+
 
 html
   height: 100%
@@ -70,9 +74,23 @@ html
               width: 284.5px
               height: 90%
               margin-top: 15px
+              @media screen and (max-width: $breakpoint-content) 
+                display: none
+                height: 100%
+            
+            #logo-linear
+              display: none
+              @media screen and (max-width: $breakpoint-content) 
+                display: inherit
           
           #header-links
             flex: 1
+            @media screen and (max-width: $links-wrap-1)
+              flex: 1.5
+            @media screen and (max-width: $links-wrap-2)
+              flex: 2
+            @media screen and (max-width: $links-wrap-3)
+              flex: 3
 
             ul
               padding-top: 38px
@@ -99,6 +117,9 @@ html
             flex: 2
             display: inline-block
             padding: 5%
+            @media screen and (max-width: $links-wrap-3)
+              padding-right: 0
+              padding-left: 0
             @media screen and (max-width: $breakpoint-content) 
               padding-left: 0
 

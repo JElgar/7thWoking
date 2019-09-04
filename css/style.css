@@ -51,8 +51,37 @@ html body #header #header-container div #header-logo img {
   height: 90%;
   margin-top: 15px;
 }
+@media screen and (max-width: 1000px) {
+  html body #header #header-container div #header-logo img {
+    display: none;
+    height: 100%;
+  }
+}
+html body #header #header-container div #header-logo #logo-linear {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  html body #header #header-container div #header-logo #logo-linear {
+    display: inherit;
+  }
+}
 html body #header #header-container div #header-links {
   flex: 1;
+}
+@media screen and (max-width: 1516px) {
+  html body #header #header-container div #header-links {
+    flex: 1.5;
+  }
+}
+@media screen and (max-width: 1284px) {
+  html body #header #header-container div #header-links {
+    flex: 2;
+  }
+}
+@media screen and (max-width: 1160px) {
+  html body #header #header-container div #header-links {
+    flex: 3;
+  }
 }
 html body #header #header-container div #header-links ul {
   padding-top: 38px;
@@ -79,6 +108,12 @@ html body #header #header-container div #header-text {
   flex: 2;
   display: inline-block;
   padding: 5%;
+}
+@media screen and (max-width: 1160px) {
+  html body #header #header-container div #header-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   html body #header #header-container div #header-text {
