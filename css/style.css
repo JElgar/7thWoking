@@ -272,17 +272,10 @@ html body #where .flex .text-section .text-container {
 }
 html body #where .flex .text-section .text-container ul {
   padding: 0px;
-  padding-left: 5%;
   margin: 0px;
   list-style-type: none;
-  float: right;
   font-weight: 400;
   font-size: 20px;
-}
-@media screen and (max-width: 1000px) {
-  html body #where .flex .text-section .text-container ul {
-    float: inherit;
-  }
 }
 html body #where .flex .text-section .text-container .button-container {
   width: 100%;
