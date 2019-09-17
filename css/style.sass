@@ -93,13 +93,14 @@ html
               flex: 3
 
             ul
-              padding-top: 38px
+              padding-top: 55px
               list-style-type: none
               font: 
                 size: 28px
               @media screen and (max-width: $breakpoint-content) 
                 margin-left: 0
                 padding-left: 0
+                padding-top: 10px
               
               a
                 color: white
@@ -122,6 +123,7 @@ html
               padding-left: 0
             @media screen and (max-width: $breakpoint-content) 
               padding-left: 0
+              padding-top: 0
 
             p
               width: 100%
@@ -186,18 +188,31 @@ html
               font:
                 size: $content-font-size
 
+            #table
+              text-align: center
+              font:
+                size: 1.3vw
+              td
+                width: 33%
+              .logo
+                width: 25%
+              img
+                width: 100%
+              @media only screen and (max-width: $breakpoint-content)
+                display: none
+
             .grid-container 
               width: 80%
-              display: grid
+              display: none
               grid-template-columns: repeat(3, 1fr)
               grid-template-rows: repeat(3, 3vw)
               margin-top: 10%
               @media only screen and (max-width: $breakpoint-content)
+                display: grid
                 margin: 10%
                 grid-template-columns: 100%
                 grid-template-rows: repeat(9, 50px)
                 grid-template-rows: $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text $mobile-grid-height-image $mobile-grid-height-text $mobile-grid-height-text
-
 
 
               .image-container
