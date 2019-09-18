@@ -217,17 +217,17 @@ html body #what .flex .text-section .text-container #table img {
 html body #what .flex .text-section .text-container .grid-container {
   width: 80%;
   display: none;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 3vw);
   margin-top: 10%;
+  margin: 10%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(11, 50px);
+  grid-template-rows: 50px 30px 30px 15px 50px 30px 30px 15px 50px 30px 30px;
 }
 @media only screen and (max-width: 1000px) {
   html body #what .flex .text-section .text-container .grid-container {
     display: grid;
-    margin: 10%;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 50px);
-    grid-template-rows: 50px 30px 30px 50px 30px 30px 50px 30px 30px;
   }
 }
 html body #what .flex .text-section .text-container .grid-container .image-container {
@@ -251,12 +251,16 @@ html body #what .flex .text-section .text-container .grid-container .date {
   align-self: center;
   font-size: 20px;
   line-height: 16pt;
+  margin-bottom: 12px;
 }
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
   html body #what .flex .text-section .text-container .grid-container .date {
     font-size: 16px;
     line-height: 12pt;
   }
+}
+html body #what .flex .text-section .text-container .grid-container .spacer {
+  height: 20px;
 }
 html body #what .flex .image-section .image-container {
   height: 100%;
