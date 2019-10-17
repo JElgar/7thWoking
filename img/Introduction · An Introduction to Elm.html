@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://guide.elm-lang.org/ -->
+<html lang="" class="gr__guide_elm-lang_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <title>Introduction · An Introduction to Elm</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Evan Czaplicki">
+        
+        
+    
+    <link rel="stylesheet" href="./Introduction · An Introduction to Elm_files/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="./Introduction · An Introduction to Elm_files/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introduction · An Introduction to Elm_files/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="./Introduction · An Introduction to Elm_files/website(1).css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://guide.elm-lang.org/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://guide.elm-lang.org/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="https://guide.elm-lang.org/install.html">
+    
+    
+
+    </head>
+    <body data-gr-c-s-loaded="true">
+        
+<div class="book without-animation with-summary font-size-2 font-family-1">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="https://guide.elm-lang.org/">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="install.html">
+            
+                <a href="https://guide.elm-lang.org/install.html">
+            
+                    
+                    Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="core_language.html">
+            
+                <a href="https://guide.elm-lang.org/core_language.html">
+            
+                    
+                    Core Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="architecture/">
+            
+                <a href="https://guide.elm-lang.org/architecture/">
+            
+                    
+                    The Elm Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="architecture/buttons.html">
+            
+                <a href="https://guide.elm-lang.org/architecture/buttons.html">
+            
+                    
+                    Buttons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="architecture/text_fields.html">
+            
+                <a href="https://guide.elm-lang.org/architecture/text_fields.html">
+            
+                    
+                    Text Fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="architecture/forms.html">
+            
+                <a href="https://guide.elm-lang.org/architecture/forms.html">
+            
+                    
+                    Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="types/">
+            
+                <a href="https://guide.elm-lang.org/types/">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="types/reading_types.html">
+            
+                <a href="https://guide.elm-lang.org/types/reading_types.html">
+            
+                    
+                    Reading Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="types/type_aliases.html">
+            
+                <a href="https://guide.elm-lang.org/types/type_aliases.html">
+            
+                    
+                    Type Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="types/custom_types.html">
+            
+                <a href="https://guide.elm-lang.org/types/custom_types.html">
+            
+                    
+                    Custom Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="types/pattern_matching.html">
+            
+                <a href="https://guide.elm-lang.org/types/pattern_matching.html">
+            
+                    
+                    Pattern Matching
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="error_handling/">
+            
+                <a href="https://guide.elm-lang.org/error_handling/">
+            
+                    
+                    Error Handling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="error_handling/maybe.html">
+            
+                <a href="https://guide.elm-lang.org/error_handling/maybe.html">
+            
+                    
+                    Maybe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="error_handling/result.html">
+            
+                <a href="https://guide.elm-lang.org/error_handling/result.html">
+            
+                    
+                    Result
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="effects/">
+            
+                <a href="https://guide.elm-lang.org/effects/">
+            
+                    
+                    Commands and Subscriptions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="effects/http.html">
+            
+                <a href="https://guide.elm-lang.org/effects/http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="effects/json.html">
+            
+                <a href="https://guide.elm-lang.org/effects/json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="effects/random.html">
+            
+                <a href="https://guide.elm-lang.org/effects/random.html">
+            
+                    
+                    Random
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="effects/time.html">
+            
+                <a href="https://guide.elm-lang.org/effects/time.html">
+            
+                    
+                    Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="interop/">
+            
+                <a href="https://guide.elm-lang.org/interop/">
+            
+                    
+                    JavaScript Interop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="interop/flags.html">
+            
+                <a href="https://guide.elm-lang.org/interop/flags.html">
+            
+                    
+                    Flags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="interop/ports.html">
+            
+                <a href="https://guide.elm-lang.org/interop/ports.html">
+            
+                    
+                    Ports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="interop/custom_elements.html">
+            
+                <a href="https://guide.elm-lang.org/interop/custom_elements.html">
+            
+                    
+                    Custom Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="webapps/">
+            
+                <a href="https://guide.elm-lang.org/webapps/">
+            
+                    
+                    Web Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="webapps/navigation.html">
+            
+                <a href="https://guide.elm-lang.org/webapps/navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="webapps/url_parsing.html">
+            
+                <a href="https://guide.elm-lang.org/webapps/url_parsing.html">
+            
+                    
+                    URL Parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="webapps/modules.html">
+            
+                <a href="https://guide.elm-lang.org/webapps/modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="webapps/structure.html">
+            
+                <a href="https://guide.elm-lang.org/webapps/structure.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="optimization/">
+            
+                <a href="https://guide.elm-lang.org/optimization/">
+            
+                    
+                    Optimization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="optimization/lazy.html">
+            
+                <a href="https://guide.elm-lang.org/optimization/lazy.html">
+            
+                    
+                    Html.lazy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="optimization/keyed.html">
+            
+                <a href="https://guide.elm-lang.org/optimization/keyed.html">
+            
+                    
+                    Html.keyed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="optimization/asset_size.html">
+            
+                <a href="https://guide.elm-lang.org/optimization/asset_size.html">
+            
+                    
+                    Minification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="next_steps.html">
+            
+                <a href="https://guide.elm-lang.org/next_steps.html">
+            
+                    
+                    Next Steps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12">
+            
+                <span>
+            
+                    
+                    Appendix
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="appendix/types_as_sets.html">
+            
+                <a href="https://guide.elm-lang.org/appendix/types_as_sets.html">
+            
+                    
+                    Types as Sets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="appendix/types_as_bits.html">
+            
+                <a href="https://guide.elm-lang.org/appendix/types_as_bits.html">
+            
+                    
+                    Types as Bits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="appendix/function_types.html">
+            
+                <a href="https://guide.elm-lang.org/appendix/function_types.html">
+            
+                    
+                    Function Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="https://guide.elm-lang.org/#"><i class="fa fa-align-justify"></i></a><div class="dropdown pull-right js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Share" href="https://guide.elm-lang.org/#"><i class="fa fa-share-alt"></i></a><div class="dropdown-menu dropdown-left"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-5 ">Facebook</button><button class="button size-5 ">Google+</button><button class="button size-5 ">Twitter</button><button class="button size-5 ">Weibo</button><button class="button size-5 ">Instapaper</button></div></div></div><a class="btn pull-right js-toolbar-action" aria-label="" href="https://guide.elm-lang.org/#"><i class="fa fa-facebook"></i></a><a class="btn pull-right js-toolbar-action" aria-label="" href="https://guide.elm-lang.org/#"><i class="fa fa-twitter"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="https://guide.elm-lang.org/#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="https://guide.elm-lang.org/">Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="an-introduction-to-elm">An Introduction to Elm</h1>
+<p><strong>Elm is a functional language that compiles to JavaScript.</strong> It competes with projects like React as a tool for creating websites and web apps. Elm has a very strong emphasis on simplicity, ease-of-use, and quality tooling.</p>
+<p>This guide will:</p>
+<ul>
+<li>Teach you the fundamentals of programming in Elm.</li>
+<li>Show you how to make interactive apps with <em>The Elm Architecture</em>.</li>
+<li>Emphasize principles and patterns that generalize to programming in any language.</li>
+</ul>
+<p>By the end I hope you will not only be able to create great web apps in Elm, but also understand the core ideas and patterns that make Elm nice to use.</p>
+<p>If you are on the fence, I can safely guarantee that if you give Elm a shot and actually make a project in it, you will end up writing better JavaScript and React code. The ideas transfer pretty easily!</p>
+<h2 id="a-quick-sample">A Quick Sample</h2>
+<p>Of course <em>I</em> think Elm is good, so look for yourself.</p>
+<p>Here is <a href="https://elm-lang.org/examples/buttons" target="_blank">a simple counter</a>. If you look at the code, it just lets you increment and decrement the counter:</p>
+<pre><code class="lang-elm"><span class="hljs-keyword">import</span> Browser
+<span class="hljs-keyword">import</span> Html <span class="hljs-keyword">exposing</span> (<span class="hljs-type">Html</span>, button, div, text)
+<span class="hljs-keyword">import</span> Html.Events <span class="hljs-keyword">exposing</span> (onClick)
+
+<span class="hljs-title">main</span> =
+  <span class="hljs-type">Browser</span>.sandbox { init = <span class="hljs-number">0</span>, update = update, view = view }
+
+<span class="hljs-keyword">type</span> <span class="hljs-type">Msg</span> = <span class="hljs-type">Increment</span> | <span class="hljs-type">Decrement</span>
+
+<span class="hljs-title">update</span> msg model =
+  <span class="hljs-keyword">case</span> msg <span class="hljs-keyword">of</span>
+    <span class="hljs-type">Increment</span> -&gt;
+      model + <span class="hljs-number">1</span>
+
+    <span class="hljs-type">Decrement</span> -&gt;
+      model - <span class="hljs-number">1</span>
+
+<span class="hljs-title">view</span> model =
+  div []
+    [ button [ onClick <span class="hljs-type">Decrement</span> ] [ text <span class="hljs-string">"-"</span> ]
+    , div [] [ text (<span class="hljs-type">String</span>.fromInt model) ]
+    , button [ onClick <span class="hljs-type">Increment</span> ] [ text <span class="hljs-string">"+"</span> ]
+    ]
+</code></pre>
+<p>Notice that the <code>update</code> and <code>view</code> are entirely decoupled. You describe your HTML in a declarative way and Elm takes care of messing with the DOM.</p>
+<h2 id="why-a-functional-language">Why a <em>functional</em> language?</h2>
+<p>Forget what you have heard about functional programming. Fancy words, weird ideas, bad tooling. Barf. Elm is about:</p>
+<ul>
+<li>No runtime errors in practice. No <code>null</code>. No <code>undefined</code> is not a function.</li>
+<li>Friendly error messages that help you add features more quickly.</li>
+<li>Well-architected code that <em>stays</em> well-architected as your app grows.</li>
+<li>Automatically enforced semantic versioning for all Elm packages.</li>
+</ul>
+<p>No combination of JS libraries can ever give you this, yet it is all free and easy in Elm. Now these nice things are <em>only</em> possible because Elm builds upon 40+ years of work on typed functional languages. So Elm is a functional language because the practical benefits are worth the couple hours you'll spend reading this guide.</p>
+<p>I have put a huge emphasis on making Elm easy to learn and use, so all I ask is that you give Elm a shot and see what you think. I hope you will be pleasantly surprised!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="https://guide.elm-lang.org/install.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Install" style="margin-right: 15px;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Install","level":"1.2","depth":1,"path":"install.md","ref":"install.md","articles":[]},"dir":"ltr"},"config":{"plugins":["youtube","bulk-redirect"],"root":"book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"bulk-redirect":{"basepath":"/","redirectsFile":"redirects.json"},"youtube":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Evan Czaplicki","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"An Introduction to Elm","gitbook":"*","description":"Learn the basics of Elm. Build applications. Learn functional programming."},"file":{"path":"README.md","mtime":"2019-08-08T19:37:08.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-08T19:38:31.834Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="./Introduction · An Introduction to Elm_files/gitbook.js"></script>
+    <script src="./Introduction · An Introduction to Elm_files/theme.js"></script>
+    
+        
+        <script src="./Introduction · An Introduction to Elm_files/search-engine.js"></script>
+        
+    
+        
+        <script src="./Introduction · An Introduction to Elm_files/search.js"></script>
+        
+    
+        
+        <script src="./Introduction · An Introduction to Elm_files/lunr.min.js"></script>
+        
+    
+        
+        <script src="./Introduction · An Introduction to Elm_files/search-lunr.js"></script>
+        
+    
+        
+        <script src="./Introduction · An Introduction to Elm_files/buttons.js"></script>
+        
+    
+        
+        <script src="./Introduction · An Introduction to Elm_files/fontsettings.js"></script>
+        
+    
+
+    
+
+
+<input type="hidden" id="extensionId" value="onlhphabpmijgblopkcjmphbbmeliagn"><div id="tasks-container"></div></body></html>
